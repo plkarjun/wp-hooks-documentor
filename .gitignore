@@ -6,3 +6,6 @@
 
 # WordPress
 /wordpress/
+
+# phpDocumentor
+/.phpdoc/
