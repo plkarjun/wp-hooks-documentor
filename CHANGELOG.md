@@ -6,6 +6,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+-
+
+## [1.5.0] - 2026-02-27
+### Added
+- Rector configuration and integration for automated code refactoring.
+- Nullable type hints to setters and `Since` constructor for improved type safety.
+
+### Changed
+- Refactored and improved codebase to align with modern PHP standards using Rector.
+- Updated Composer dependencies and requirements.
+- Updated documentation, including README and test documentation.
+- Improved and updated templates for documentation output.
+- Renamed CLI binary to `wphd`.
+
+### Fixed
+- Fixed SVG filename in logos documentation.
+- Various minor bug fixes and improvements across the codebase and tests.
+
 ## [1.4.0] - 2024-05-06
 ### Changed
 - Symfony Composer requirement changed to `"^5.0 || ^6.0 || ^6.1 || ^6.2"`.
