@@ -14,7 +14,7 @@ WordPress Blue  | `#0073AA` | https://make.wordpress.org/design/handbook/design-
 ## SVG Optimizer
 
 ```
-svgo solvebeam-wp-documentor.svg -o solvebeam-wp-documentor.svgo-min.svg
+svgo solvebeam-wp-hooks-documentor.svg -o solvebeam-wp-hooks-documentor.svgo-min.svg
 ```
 
 ## Inspiration
