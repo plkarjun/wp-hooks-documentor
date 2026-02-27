@@ -62,7 +62,7 @@ echo '<p align="center">';
 printf(
 	'<a href="%s"><img src="%s" alt="SolveBeam WordPress Hooks Documentor" width="32" height="32"></a>',
 	'https://github.com/solvebeam/wp-hooks-documentor',
-	'https://cdn.jsdelivr.net/gh/solvebeam/wp-hooks-documentor@main/logos/solvebeam-wp-documentor.svgo-min.svg'
+	'https://cdn.jsdelivr.net/gh/solvebeam/wp-hooks-documentor@main/logos/solvebeam-wp-hooks-documentor.svgo-min.svg'
 );
 
 echo '<br>';
